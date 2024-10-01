@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BD3 Firebase</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <!-- IMPORT DO SDK DO FIREBASE --> 
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"> </script> 
+
+    <!-- IMPORT DO SDK DO FIRESTORE --> 
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+
+    <!-- Credenciais -->
+    <script type="module">
+        const firebaseConfig = {
+            apiKey: "AIzaSyAwjQdv_GltcviPOdMA19W8e1svqafXbBQ",
+            authDomain: "bd3-app-libri-guilherme.firebaseapp.com",
+            projectId: "bd3-app-libri-guilherme",
+            storageBucket: "bd3-app-libri-guilherme.appspot.com",
+            messagingSenderId: "909440478220",
+            appId: "1:909440478220:web:c8c3415986bf63999a9229",
+            measurementId: "G-SW6PPG0MHC"
+        };
+        
+        //Inicializa o Firebase
+        firebase.initializeApp(firebaseConfig);
+
+        //Iniciliza o Firestore
+        const db = firebase.firestore();
+        console.log(db)
+    </script>
+
+    <script src="app.js"></script>
+<body>
+    
+</body>
+</html>
